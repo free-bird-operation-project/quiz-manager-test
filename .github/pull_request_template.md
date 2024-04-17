@@ -1,6 +1,6 @@
 ## ❓ What type of PR is this?
 <!-- 
-Raw mode: Write x between the brackets if it is applicable, like this [ x ]
+Raw mode: Write x between the brackets if it is applicable, like this [x]
 Reading mode: Check all applicable.
 -->
 - [ ] Refactor ♻️

@@ -1,8 +1,13 @@
 'use strict'
 
-import { Hello } from './hello.js'
+import { Hello, Hi } from './hello.js'
 
-it('should true if called', () => {
+it('should true if Hello called', () => {
 	const result = Hello()
 	expect(result).toBe(true)
+})
+
+it('should true if Hi called', () => {
+	const result = Hi()
+	expect(result).toBe(false)
 })

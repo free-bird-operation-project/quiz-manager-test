@@ -2,4 +2,8 @@ function Hello() {
 	return true
 }
 
-export { Hello }
+function Hi() {
+	return false
+}
+
+export { Hello, Hi }

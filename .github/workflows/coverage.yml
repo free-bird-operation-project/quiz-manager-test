@@ -1,6 +1,6 @@
 name: 'coverage'
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
       - development
@@ -9,7 +9,20 @@ on:
       - pages
 jobs:
   coverage:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ArtiomTr/jest-coverage-report-action@v2
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'yarn'
+      - uses: ArtiomTr/jest-coverage-report-action@v2.1.2
+        id: coverage
+        with:
+          annotations: none
+          package-manager: yarn
+          test-script: yarn coverage
+          icons: emoji

@@ -8,6 +8,7 @@
 		"start": "webpack-dev-server --config=webpack.config.dev.js --open",
 		"test": "jest",
 		"prettier": "npx prettier . --write",
+		"report" : "npx jest --ci --json --coverage --testLocationInResults --outputFile=report.json",
 		"coverage": "jest --coverage"
 	},
 	"author": "Free Bird Operation Project",

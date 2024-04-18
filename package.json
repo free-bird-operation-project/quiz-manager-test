@@ -6,8 +6,9 @@
 		"build": "webpack --config=webpack.config.prod.js",
 		"build-dev": "webpack --config=webpack.config.dev.js",
 		"start": "webpack-dev-server --config=webpack.config.dev.js --open",
-		"test": "jest --coverage",
-		"prettier": "npx prettier . --write"
+		"test": "jest",
+		"prettier": "npx prettier . --write",
+		"coverage": "jest --json --coverage --outputFile=report.json"
 	},
 	"author": "Free Bird Operation Project",
 	"license": "MIT",

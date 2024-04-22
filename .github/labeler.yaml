@@ -1,11 +1,11 @@
 # For changes in dependencies
-📦 dependencies:
+'📦 dependencies':
   - changed-files:
       - any-glob-to-any-file:
           - yarn.lock
 
 # For changes in documentation
-📖 documentation:
+'📖 documentation':
   - changed-files:
       - any-glob-to-any-file:
           - docs/*.md
@@ -13,13 +13,13 @@
           - README.md
 
 # For changes in source code
-✨ enhancement:
+'✨ enhancement':
   - changed-files:
       - any-glob-to-any-file:
           - 'src/*'
 
 # For changes in site
-🌍 site:
+'🌍 site':
   - changed-files:
       - any-glob-to-any-file:
           - 'public/*'

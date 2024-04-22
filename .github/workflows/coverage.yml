@@ -1,0 +1,33 @@
+name: 'Jest Coverage'
+on:
+  pull_request:
+    branches:
+      - main
+      - development
+      - utility
+      - components
+      - pages
+jobs:
+  coverage:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js and Yarn
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run coverage
+        run: yarn coverage

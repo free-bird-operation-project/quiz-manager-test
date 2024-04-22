@@ -23,7 +23,7 @@ Reading mode: Check all applicable.
 _We encourage you to keep the code coverage percentage at 85% and above._
 
 - [ ] Yes
-- [ ] No, and this is why: _please replace this line with details on why tests have not been included_
+- [ ] No, and this is why: <!-- Please replace this line with details on why tests have not been included -->
 - [ ] I need help with writing tests
 
 ## 📚 Resources for Reviewers
